@@ -1,0 +1,48 @@
+{
+    "_from": "@airtable/simple-chart-block",
+    "_id": "@airtable/simple-chart-block@1.0.7",
+    "_inBundle": false,
+    "_integrity": "sha512-Y/VQB2Z8bFTdmj+viXKPZ7oMsgJZqun0eAmMxEFAPYgoJu++rnOUWf3ka36bhDzDQ2xeS0ayMCrgDQl8fnIdgw==",
+    "_location": "/@airtable/simple-chart-block",
+    "_phantomChildren": {},
+    "_requested": {
+        "type": "tag",
+        "registry": true,
+        "raw": "@airtable/simple-chart-block",
+        "name": "@airtable/simple-chart-block",
+        "escapedName": "@airtable%2fsimple-chart-block",
+        "scope": "@airtable",
+        "rawSpec": "",
+        "saveSpec": null,
+        "fetchSpec": "latest"
+    },
+    "_requiredBy": [
+        "#USER"
+    ],
+    "_resolved": "https://registry.npmjs.org/@airtable/simple-chart-block/-/simple-chart-block-1.0.7.tgz",
+    "_shasum": "1320d70a5b2d766285a9abad043e3c99b8fc384d",
+    "_spec": "@airtable/simple-chart-block",
+    "_where": "C:\\Users\\James\\detail_page\\detail_view",
+    "author": "",
+    "bundleDependencies": false,
+    "dependencies": {
+        "@airtable/blocks": "0.0.40",
+        "chart.js": "^2.8.0",
+        "react": "^16.9.0",
+        "react-chartjs-2": "^2.7.6",
+        "react-dom": "^16.9.0"
+    },
+    "deprecated": false,
+    "description": "A bar chart of data from a table",
+    "devDependencies": {
+        "eslint": "^6.3.0",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^2.0.1"
+    },
+    "license": "UNLICENSED",
+    "name": "@airtable/simple-chart-block",
+    "scripts": {
+        "lint": "eslint frontend"
+    },
+    "version": "1.0.7"
+}
