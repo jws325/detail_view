@@ -89,381 +89,381 @@ function SimpleChartBlock() {
     const profitMarginData = records && xField && profitMarginField ? getChartData(records, xField, profitMarginField, profitMarginColor) : null;	
 	
     return (
-	<section>
-		<div>		
-		<Settings table={table} />
-		</div>
+			<section>
+				<div>		
+				<Settings table={table} />
+				</div>
 
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Ordered Product Sales</h3>			
-				
-				{salesData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={salesData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Ordered Product Sales</h3>
+
+						{salesData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={salesData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
-					</Box>
-				)}
-			</Box>
-		</div>
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Units Ordered</h3>
-				
-				{unitsOrderedData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={unitsOrderedData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+										legend: {
+											display: false,
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
+									}}
+								/>
+							</Box>
+						)}
 					</Box>
-				)}
-			</Box>		
-		</div>
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Sessions</h3>
-				
-				{sessionsData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={sessionsData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Units Ordered</h3>
+
+						{unitsOrderedData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={unitsOrderedData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
-					</Box>
-				)}
-			</Box>		
-		</div>		
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>ACOS (All Units)</h3>
-				
-				{acosData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={acosData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+										legend: {
+											display: false,
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
+									}}
+								/>
+							</Box>
+						)}
 					</Box>
-				)}
-			</Box>		
-		</div>			
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Amazon PPC Spend</h3>
-				
-				{amazonPPCSpendData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={amazonPPCSpendData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Sessions</h3>
+
+						{sessionsData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={sessionsData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
-					</Box>
-				)}
-			</Box>		
-		</div>			
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Conversion Rate</h3>
-				
-				{conversionRateData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={conversionRateData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+										legend: {
+											display: false,
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
+									}}
+								/>
+							</Box>
+						)}
 					</Box>
-				)}
-			</Box>		
-		</div>			
-		
-					<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Cost of Acquiring Sale</h3>
-				
-				{costOfAcquiringSalesData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={costOfAcquiringSalesData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>ACOS (All Units)</h3>
+
+						{acosData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={acosData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
-					</Box>
-				)}
-			</Box>		
-		</div>
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Profit / Loss Per Unit Sold</h3>
-				
-				{profitLossPerUnitSoldData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={profitLossPerUnitSoldData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+										legend: {
+											display: false,
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
+									}}
+								/>
+							</Box>
+						)}
 					</Box>
-				)}
-			</Box>		
-		</div>				
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Total Profit / Loss</h3>
-				
-				{totalProfitLossData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={totalProfitLossData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Amazon PPC Spend</h3>
+
+						{amazonPPCSpendData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={amazonPPCSpendData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
-					</Box>
-				)}
-			</Box>		
-		</div>			
-		
-		<div>
-			<Box
-				position="relative"
-				top={"50"}
-				left={0}
-				right={0}
-				bottom={0}
-				display="flex"
-				flexDirection="column"
-			>
-				<h3>Profit Margin</h3>
-				
-				{profitMarginData && (
-					<Box position="relative" flex="auto" padding={3}>
-						<Line
-							data={profitMarginData}
-							options={{
-								maintainAspectRatio: false,
-								scales: {
-									yAxes: [
-										{
-											ticks: {
-												beginAtZero: true,
-											},
+										legend: {
+											display: false,
 										},
-									],
-								},
-								legend: {
-									display: false,
-								},
-							}}
-						/>
+									}}
+								/>
+							</Box>
+						)}
 					</Box>
-				)}
-			</Box>		
-		</div>			
-	</section>	
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Conversion Rate</h3>
+
+						{conversionRateData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={conversionRateData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
+										},
+										legend: {
+											display: false,
+										},
+									}}
+								/>
+							</Box>
+						)}
+					</Box>
+				</div>
+
+							<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Cost of Acquiring Sale</h3>
+
+						{costOfAcquiringSalesData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={costOfAcquiringSalesData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
+										},
+										legend: {
+											display: false,
+										},
+									}}
+								/>
+							</Box>
+						)}
+					</Box>
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Profit / Loss Per Unit Sold</h3>
+
+						{profitLossPerUnitSoldData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={profitLossPerUnitSoldData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
+										},
+										legend: {
+											display: false,
+										},
+									}}
+								/>
+							</Box>
+						)}
+					</Box>
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Total Profit / Loss</h3>
+
+						{totalProfitLossData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={totalProfitLossData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
+										},
+										legend: {
+											display: false,
+										},
+									}}
+								/>
+							</Box>
+						)}
+					</Box>
+				</div>
+
+				<div>
+					<Box
+						position="relative"
+						top={"50"}
+						left={0}
+						right={0}
+						bottom={0}
+						display="flex"
+						flexDirection="column"
+					>
+						<h3>Profit Margin</h3>
+
+						{profitMarginData && (
+							<Box position="relative" flex="auto" padding={3}>
+								<Line
+									data={profitMarginData}
+									options={{
+										maintainAspectRatio: false,
+										scales: {
+											yAxes: [
+												{
+													ticks: {
+														beginAtZero: true,
+													},
+												},
+											],
+										},
+										legend: {
+											display: false,
+										},
+									}}
+								/>
+							</Box>
+						)}
+					</Box>
+				</div>
+			</section>
     );
 }
 
