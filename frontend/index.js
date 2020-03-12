@@ -37,53 +37,43 @@ function SimpleChartBlock() {
     const records = useRecords(view ? view.selectRecords() : null);
     
     console.log(records);
-    
-    const salesId = 'fldiXIfrHX0xYlBVn';
+
     const salesField = 'Ordered Product Sales';
     const salesColor = 'green';
     const salesData = records && xField && salesField ? getChartData(records, xField, salesField, salesColor) : null;
-    
-    const unitsOrderedId = 'fld3jPva07I45msC8';
+
     const unitsOrderedField = 'Units Ordered'
     const unitsOrderedColor = 'blue';
     const unitsOrderedData = records && xField && unitsOrderedField ? getChartData(records, xField, unitsOrderedField, unitsOrderedColor) : null;    
-    
-    const sessionsId = 'fldB0BZcN12dOehe6';
+
     const sessionsField = 'Sessions';
     const sessionsColor = 'orange';
     const sessionsData = records && xField && sessionsField ? getChartData(records, xField, sessionsField, sessionsColor) : null;        
-    
-    const acosId = 'fldkPkVhIvX6HyxK2';
+
     const acosField = 'ACOS (All Units)';
     const acosColor = 'salmon';
     const acosData = records && xField && acosField ? getChartData(records, xField, acosField, acosColor) : null;        
-    
-    const amazonPPCSpendId = 'fld1XKjlHCOYLcAyL';
+
     const amazonPPCField = 'Amazon PPC Spend';
     const amazonPPCSpendColor = '#F0B27A';
     const amazonPPCSpendData = records && xField && amazonPPCField ? getChartData(records, xField, amazonPPCField, amazonPPCSpendColor) : null;        
-    
-    const conversionRateId = 'fldw3WBJJZf9OJnOh';
+
     const conversionRateField = 'Conversion Rate';
     const conversionRateColor = '#65B4AF';
     const conversionRateData = records && xField && conversionRateField ? getChartData(records, xField, conversionRateField, conversionRateColor) : null;    
-    
-    const costOfAcquiringSalesId = 'fldVnF8SHN4ner9uT';
+
     const costOfAcquiringSalesField = 'Cost of Acquiring Sale';
     const costOfAcquiringSalesColor = '#D8DD6C';
     const costOfAcquiringSalesData = records && xField && costOfAcquiringSalesField ? getChartData(records, xField, costOfAcquiringSalesField, costOfAcquiringSalesColor) : null;        
-    
-    const profitLossPerUnitSoldId = 'fldLg4MqBlUywMMIW';
+
     const profitLossPerUnitSoldField = 'Profit / Loss Per Unit Sold';
     const profitLossPerUnitSoldColor = '#58D68D';
     const profitLossPerUnitSoldData = records && xField && profitLossPerUnitSoldField ? getChartData(records, xField, profitLossPerUnitSoldField, profitLossPerUnitSoldColor) : null;        
-    
-    const totalProfitLossId = 'fldXdv7F1fOkeEljW';
+
     const totalProfitLossField = 'Total Profit / Loss';
     const totalProfitLossColor = '#3498DB';
     const totalProfitLossData = records && xField && totalProfitLossField ? getChartData(records, xField, totalProfitLossField, totalProfitLossColor) : null;        
-    
-    const profitMarginId = 'fldnJuGtyCmaqvGka';
+
     const profitMarginField = 'Profit Margin';
     const profitMarginColor = '#D8A9FF';
     const profitMarginData = records && xField && profitMarginField ? getChartData(records, xField, profitMarginField, profitMarginColor) : null;    
